@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#enter {
+    margin-top: 10px;
+}
+
+#card {
+    position: relative;
+    top: 100px;
+    left: -40px;
+}
+
+#to {
+    font-weight: 900;
+}
+
+@media screen and (max-width:480px) {
+    #card {
+        position: relative;
+        left: 0px;
+    }
+    #grid_plus {
+        display: inline-grid;
+        grid-template-columns: 3px 300px 130px;
+    }
+    #row {
+        display: inline-grid;
+        grid-template-columns: 100px 150px 150px;
+        /*padding: 10px;*/
+    }
+}

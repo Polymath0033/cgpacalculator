@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Cumulative</title>
+</head>
+
+<body>
+    <!-- container for the whole page -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-2 col-sm-2 col-md-2 col-lg-2"></div>
+            <div class="col-xl-10 col-sm-10 col-md-10 col-lg-10">
+                <div id="card" class="card border-5 border-info">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
+                            <div class="card-header">
+                                <!-- head of the page -->
+                                <h1 class="card-title text-decoration-underline text-primary text-center">Welcome</h1>
+                                <p id="to" class="text-dark text-center font-weight-bold">to a platform that calculate Cumulative Grade Point Average(CGPA)</p>
+                                <div id="grid_plus" class="row">
+                                    <div class="col-xl-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+                                    <!-- <div id="grid_plus" class="row"> -->
+                                    <div class="col-xl-6 col-sm-6 col-md-6 col-lg-6 mx-3"><label style="margin-left:10px" for="mx-4 course" style="font-weight: 700;" class="text-success font-weight-bold text-center">Number of courses to calculate</label>
+                                        <input id="input" type="text" placeholder="Enter the number of courses to calculate" class="form-control">
+                                    </div>
+                                    <div class="col-xl-3 col-sm-3 col-md-3 col-lg-3">
+                                        <br>
+                                        <input onclick="myFunction()" type="button" id="enter" value="Enter" class="bg-success font-weight-bold text-white form-control ">
+                                    </div>
+                                    <!-- </div> -->
+                                </div>
+                                <span id="isNaN" class="text-danger text-center font-italic font-weight-bold"><b></b></span></div>
+                        </div>
+                    </div>
+                    <div id="display_text" class="card-body">
+                        <!-- <div id="the_text">
+                                <p id="for_check" class="text-center text-danger font-italic font-weight-bold">
+                                     You gats put something there
+                            </p>
+                        </div> -->
+
+                    </div>
+                    <div style="display: none;" id="the_text">
+                        <p id="for_check" class="text-center text-danger font-italic font-weight-bold">
+                            <!-- You gats put something there -->
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <input type="button" data-toggle="modal" data-target="#myModal" onclick="mySubmit()" class="form-control bg-dark font-weight-bold text-white shadow" style='display: none;' value="calculate!" id="submit">
+                        <!-- Modal -->
+                        <div id="myModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title text-primary text-center">Your Cumulative Grade Point Average(CGPA)</h4>
+                                    </div>
+                                    <div style="height: 500px;" class="modal-body h-100">
+                                        <h1 id="show" style="height: 150px;" class="text-center w-50 mx-auto h-100 rounded-circle bg-success text-white">This is not a number.</h1>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default bg-danger text-white" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="show" class="col-xl-2 col-sm-4 col-md-4 col-lg-4">Shows
+            <p id="texT"></p>
+        </div> -->
+    </div>
+    </div>
+    <script src="main.js"></script>
+    <!-- <script src="boot/js/bootstrap.bundle.js"></script>
+    <script src="boot/js/bootstrap.min.js"></script>
+    <script src="boot/js/bootstrap.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
