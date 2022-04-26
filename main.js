@@ -32,8 +32,14 @@ function myFunction() {
     // for input confirmation if it is empty or not a number
     var isNaN = document.getElementById('isNaN');
     //var submit = document.getElementById('submit');
-    if (_input === '') {
+    if (_input === '' || _input === '0') {
+        //document.getElementById('input').style.border = '1px solid red'
         isNaN.innerHTML = 'Enter a Number';
+
+        // document.getElementById('input').setAttribute('placeholder', 'You must enter a number not negative neither zero(0)')
+        document.getElementById('input').setAttribute('class', 'form-control outline-danger border-danger  text-danger')
+            //_show.style.display = 'none';
+        submit.style.display = 'none';
     } else {
         //list of selection input and grade input
         var _display = '<ul class="list-group">';
