@@ -106,15 +106,9 @@ function mySubmit() {
         //final += parseInt(final_multiple);
         var total = final / division;
         var final_2;
-        // if (total === '5' || '4' || '3' || '2' || '1') {
-        //     total = total + '.00';
-        // }
         document.getElementById('show').innerHTML = total.toFixed(2);
         console.log(total)
             //document.getElementById('texT').innerHTML = _second_n_sum;
     }
-    //multiply += arr;
-    // document.getElementById('show').innerHTML = multiply;
-    // multiplication += multiply;
-    // document.getElementById('show').innerHTML = multiplication;
+    
 }
