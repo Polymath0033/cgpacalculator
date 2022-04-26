@@ -110,5 +110,5 @@ function mySubmit() {
         console.log(total)
             //document.getElementById('texT').innerHTML = _second_n_sum;
     }
-    
+
 }
