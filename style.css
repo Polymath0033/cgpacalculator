@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -8,7 +10,9 @@ body {
     justify-content: center;
     align-items: center; */
 }
-
+#cont{
+    display: flex;
+}
 #enter {
     margin-top: 10px;
 }
