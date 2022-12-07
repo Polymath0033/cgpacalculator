@@ -11,7 +11,7 @@ body {
     align-items: center; */
 }
 #cont{
-    display: flex;
+    width:70rem;
 }
 #enter {
     margin-top: 10px;
@@ -23,11 +23,18 @@ body {
     left: -40px;
 }
 
+#show{
+    padding:2rem;
+    font-size: 4rem;
+}
 #to {
     font-weight: 900;
 }
 
 @media screen and (max-width:480px) {
+    #cont{
+        width: 30rem;
+    }
     #card {
         position: relative;
         left: 0px;
